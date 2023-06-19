@@ -29,10 +29,76 @@ const Home = () => {
           </div>
         </div>
       </nav>
-      <aside className={`h-[742px] ${open ? "w-20" : "w-36"} shadow-md rounded-e-md overflow-hidden`}>
+      <main className="ml-20  h-full">
+      <div className="flex justify-between">
+      <p className="text-2xl ml-10 mt-5 text-[#0029FF] font-bold">T</p>
+      <button className="bg-[#0029FF] text-white rounded-lg w-fit px-5 py-1 mt-5 font-semibold mr-48">
+      Submit task
+      </button>
+      </div>
+      <div className="m-10 mr-20 rounded-lg w-[81%] h-[135px] bg-[#E9ECEF]">
+        j
+      </div>
+      <div className="grid grid-rows-2 grid-cols-2  gap-y-20">
+      {/*container*/}
+      <div className="w-[480px] h-[580px] shadow-lg rounded-lg overflow-hidden bg-[#FDFDFD] ml-10">
+      {/*heading */}
+      <div className="h-[50px] w-auto bg-black pt-3">
+      <p className="text-center font-sans font-semibold text-white"></p>
+      </div>
+      {/*description*/}
+          <li className="list-none ml-5 my-5"><b>Description:</b> Story of Alignment Scope of Agility Specific Accountable Staggering Approach</li>
+       {/*video */} 
+       <iframe className="h-[291px] w-[480px]" src="" title="/">
+       </iframe>           
+      </div>
+      {/*container*/}
+      <div className="w-[480px] h-[580px] shadow-lg rounded-lg overflow-hidden bg-[#FDFDFD]  relative right-14">
+      {/*heading */}
+      <div className="h-[50px] w-auto bg-black pt-3">
+      <p className="text-center font-sans font-semibold text-white"></p>
+      </div>
+      {/*description*/}
+          <li className="list-none ml-5 my-5"><b>Description:</b> Story of Alignment Scope of Agility Specific Accountable Staggering Approach</li>
+               
+      </div>
+      {/*container*/}
+      <div className="w-[480px] h-[580px] shadow-lg rounded-lg overflow-hidden bg-[#FDFDFD] ml-10">
+      {/*heading */}
+      <div className="h-[50px] w-auto bg-black pt-3">
+      <p className="text-center font-sans font-semibold text-white"></p>
+      </div>
+      {/*description*/}
+          <li className="list-none ml-5 my-5"><b>Description:</b> Story of Alignment Scope of Agility Specific Accountable Staggering Approach</li>
+    
+             
+      </div>
+      {/*container*/}
+      <div className="w-[480px] h-[580px] shadow-lg rounded-lg overflow-hidden bg-[#FDFDFD] relative right-14">
+      {/*heading */}
+      <div className="h-[50px] w-auto bg-black pt-3">
+      <p className="text-center font-sans font-semibold text-white"></p>
+      </div>
+      {/*description*/}
+          <li className="list-none ml-5 my-5"><b>Description:</b> Story of Alignment Scope of Agility Specific Accountable Staggering Approach</li>
+       
+                
+      </div>
+      </div>
+      </main>
+      <aside className={`h-[742px] ${open ? "w-20" : "w-[22rem]"} shadow-md rounded-e-md overflow-hidden absolute top-[90px]`}>
         <div className="bg-black h-[50px] flex justify-end pr-5 place-items-center">
-          <FontAwesomeIcon icon={icon({ name: "arrow-alt-circle-right" })} style={{ color: "#ffffff" }} size="xl" onClick={() => setOpen(!open)} />
+          <button><FontAwesomeIcon icon={icon({ name: "arrow-alt-circle-right" })} style={{ color: "#ffffff" }} size="xl" onClick={() => setOpen(!open)} />
+          </button>
         </div>
+        {open || (<div>
+         <li className="list-disc ml-7 mt-5 font-semibold font-poppins ">Explore the world of management</li>
+         <li className="list-disc ml-9 mt-4 font-poppins "> Technical Project Management</li>
+         <li className="list-disc ml-9 font-poppins">  Threadbuild </li>
+         <li className="list-disc ml-9 font-poppins">  Structure your pointers</li>
+         <li className="list-disc ml-9 font-poppins">   4SA Method </li>
+       </div>
+        )}
       </aside>
     </div>
   );
